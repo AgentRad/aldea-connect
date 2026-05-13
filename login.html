@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Log in — Aldea Connect</title>
+<meta name="description" content="Log in to your Aldea Connect account." />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/styles.css" />
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-row">
+    <a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg></span><span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span></a>
+    <div class="nav-cta"><a class="link" href="/">← Back to home</a></div>
+  </div>
+</header>
+
+<main style="padding:64px 0;background:var(--sand);min-height:calc(100vh - 72px)">
+  <div class="container" style="max-width:440px">
+    <div class="card">
+      <h1 style="font-size:28px;margin:0 0 6px;text-align:center">Welcome back</h1>
+      <p style="text-align:center;color:var(--ink-3)">Log in to your Aldea Connect account.</p>
+      <form class="form" id="intake-form" novalidate style="margin-top:8px">
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Password<input type="password" name="password" required autocomplete="current-password" /></label>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--ink-3)">
+          <label style="flex-direction:row;align-items:center;gap:6px;font-weight:500"><input type="checkbox" style="accent-color:var(--teal-600)" /> Remember me</label>
+          <a href="#" style="font-weight:600">Forgot password?</a>
+        </div>
+        <button class="btn btn-primary btn-lg" type="submit">Log in</button>
+        <div class="form-success" hidden role="status"><strong>Logged in (demo).</strong> Connect Supabase or Auth.js to wire this up.</div>
+      </form>
+      <p style="text-align:center;font-size:14px;margin-top:18px;color:var(--ink-3)">
+        Don&rsquo;t have an account? <a href="/#match" style="font-weight:600">Get matched →</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<script src="/assets/app.js" defer></script>
+</body></html>

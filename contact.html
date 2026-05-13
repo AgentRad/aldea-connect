@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Aldea Connect</title>
+<meta name="description" content="Reach Aldea Connect. We respond to families within one business day." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/styles.css" />
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav-row">
+    <a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg></span><span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span></a>
+    <nav class="nav-links"><a href="/providers.html">Find a provider</a><a href="/for-providers.html">For providers</a><a href="/how-it-works.html">How it works</a><a href="/screeners.html">Free screeners</a></nav>
+    <div class="nav-cta"><a class="link" href="/login.html">Log in</a><a class="btn btn-primary" href="/#match">Get matched</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="/providers.html">Find a provider</a><a href="/for-providers.html">For providers</a><a href="/how-it-works.html">How it works</a><a href="/screeners.html">Free screeners</a><a href="/login.html">Log in</a><a class="btn btn-primary" href="/#match">Get matched</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">We&rsquo;d love to hear from you</span>
+    <h1>Contact Aldea Connect</h1>
+    <p>For families: we respond within one business day. For providers: our credentialing team replies within 3 business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container match-grid">
+    <div>
+      <h2>Offices</h2>
+      <p><strong>Orlando</strong><br/>100 E Pine Street, Suite 116<br/>Orlando, FL 32801</p>
+      <p><strong>Tampa</strong><br/>603 E Jackson St, Suite 3<br/>Tampa, FL 33602</p>
+      <p style="margin-top:24px"><strong>Email</strong> · <a href="mailto:hello@youraldea.com">hello@youraldea.com</a><br/><strong>Phone</strong> · <a href="tel:+18005550100">(800) 555-0100</a></p>
+      <p style="color:var(--ink-3);font-size:13px;margin-top:18px">For an urgent mental-health concern, please call 988 or your local emergency line. Aldea Connect is not a crisis service.</p>
+    </div>
+    <form class="card form" id="intake-form" novalidate>
+      <h3 style="margin:0 0 6px">Send us a message</h3>
+      <label>Your name<input name="name" required autocomplete="name" /></label>
+      <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+      <label>I am a…
+        <select name="who" required>
+          <option value="">Select…</option>
+          <option>Parent or caregiver</option><option>Provider / clinician</option><option>Press / partnership</option><option>Other</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn-primary btn-lg" type="submit">Send message</button>
+      <div class="form-success" hidden role="status"><strong>Thanks — message received.</strong> We&rsquo;ll reply soon.</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="container foot-grid">
+    <div><a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg></span><span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span></a><p class="foot-tag">Pediatric care, matched in days.</p></div>
+    <div><h4>For families</h4><a href="/providers.html">Find a provider</a><a href="/screeners.html">Free screeners</a><a href="/how-it-works.html">How it works</a></div>
+    <div><h4>For providers</h4><a href="/for-providers.html">Join the network</a><a href="/for-providers.html#pricing">Pricing</a></div>
+    <div><h4>Company</h4><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div>
+  </div>
+  <div class="container foot-base"><span>© <span id="yr"></span> Aldea Connect.</span><span>Orlando · Tampa · Miami · Jacksonville</span></div>
+</footer>
+<script src="/assets/app.js" defer></script>
+</body></html>
