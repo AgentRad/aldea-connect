@@ -3,375 +3,544 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Aldea Connect — Your child deserves to thrive. No waitlist.</title>
-<meta name="description" content="Aldea Connect matches Florida families with vetted pediatric providers for autism & ADHD evaluations, ABA, speech and OT — no waitlist." />
-<meta property="og:title" content="Aldea Connect — Pediatric care, matched in days" />
-<meta property="og:description" content="Autism & ADHD evaluations, ABA, speech and OT. Matched to a vetted Florida provider in 48 hours." />
-<meta property="og:type" content="website" />
-<meta name="theme-color" content="#0a8a8a" />
+<title>Aldea | Pediatric Therapy &amp; Evaluations in Florida — No Waitlist</title>
+<meta name="description" content="Autism &amp; ADHD evaluations, ABA therapy, speech therapy and OT across Florida. Vetted pediatric providers, no waitlist." />
+<meta name="theme-color" content="#103040" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/styles.css" />
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/assets/img/logo/aldea-logo.svg" type="image/svg+xml" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav" id="nav">
-  <div class="container nav-row">
-    <a class="brand" href="/" aria-label="Aldea Connect home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg>
-      </span>
-      <span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="/providers.html">Find a provider</a>
-      <a href="/for-providers.html">For providers</a>
-      <a href="/how-it-works.html">How it works</a>
-      <a href="/screeners.html">Free screeners</a>
-    </nav>
-    <div class="nav-cta">
-      <a class="link" href="/login.html">Log in</a>
-      <a class="btn btn-primary" href="#match">Get matched</a>
+<header>
+  <!-- Announcement marquee -->
+  <div class="marquee" aria-label="Announcement">
+    <div class="marquee-track">
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+      <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
   </div>
-  <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="/providers.html">Find a provider</a>
-    <a href="/for-providers.html">For providers</a>
-    <a href="/how-it-works.html">How it works</a>
-    <a href="/screeners.html">Free screeners</a>
-    <a href="/login.html">Log in</a>
-    <a class="btn btn-primary" href="#match">Get matched</a>
-  </div>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-row">
+      <a class="brand" href="/">
+        <img class="brand-logo" src="/assets/img/logo/aldea-logo.svg" alt="" />
+        <span><span class="brand-wordmark">Aldea</span><span class="brand-sub">Connect Directory</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="/about.html">About Us</a>
+        <span class="has-menu" tabindex="0">
+          <span>For Providers <span class="caret">▾</span></span>
+          <div class="menu">
+            <a href="/for-providers.html">Join our provider network</a>
+            <a href="/for-providers.html#refer">Refer a patient</a>
+          </div>
+        </span>
+        <a href="/learn.html">Learn</a>
+        <a href="/screeners.html#milestone">Milestone Tracker</a>
+        <span class="has-menu" tabindex="0">
+          <span>Free Screeners <span class="caret">▾</span></span>
+          <div class="menu">
+            <a href="/screeners.html#autism">Autism screening</a>
+            <a href="/screeners.html#adhd">ADHD screening</a>
+            <a href="/screeners.html#speech">Speech screening</a>
+            <a href="/screeners.html#language">Language screening</a>
+          </div>
+        </span>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="nav-cta">
+        <a class="signin" href="/login.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/></svg> Sign In</a>
+        <a class="btn btn-yellow" href="#match">Get Started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/about.html">About Us</a>
+      <a href="/for-providers.html">For Providers</a>
+      <a href="/learn.html">Learn</a>
+      <a href="/screeners.html">Free Screeners</a>
+      <a href="/contact.html">Contact Us</a>
+      <a href="/login.html">Sign In</a>
+      <a href="#match" class="btn btn-yellow" style="margin-top:12px">Get Started</a>
+    </div>
+  </nav>
 </header>
 
 <main id="main">
 
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Florida · No waitlist</span>
-      <h1>Your child deserves to <em>thrive.</em></h1>
-      <p class="lead">Aldea Connect matches families with carefully vetted pediatric providers for autism &amp; ADHD evaluations, ABA, speech and occupational therapy — usually within 48 hours, never a six-month wait.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary btn-lg" href="#match">Get matched</a>
-        <a class="btn btn-ghost btn-lg" href="/providers.html">Browse providers</a>
-      </div>
-      <ul class="trust-row" aria-label="Trust signals">
-        <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg> Background-checked clinicians</li>
-        <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" d="M4 12l5 5L20 6"/></svg> In-network with most plans</li>
-        <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 1l4 4h-3v6h-2V5H8l4-4zm-7 12h14v8H5v-8z"/></svg> HSA / FSA accepted</li>
-      </ul>
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-photo" src="/assets/img/aldea-image.png" alt="" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <h1>Your child<br/>deserves to thrive</h1>
+      <p class="sub">Autism &amp; ADHD evaluations, ABA therapy, speech therapy — no waitlist.</p>
+
+      <form class="hero-search" id="match-mini" onsubmit="event.preventDefault(); document.querySelector('#match').scrollIntoView({behavior:'smooth'});">
+        <div class="field">
+          <label for="loc">Location</label>
+          <select id="loc" name="location"><option value="">Choose location…</option><option>Orlando</option><option>Tampa</option><option>Miami</option><option>Jacksonville</option><option>Telehealth</option></select>
+        </div>
+        <div class="field">
+          <label for="svc">Service Type</label>
+          <select id="svc" name="service"><option value="">All services…</option><option>Autism / ADHD evaluation</option><option>ABA therapy</option><option>Speech therapy</option><option>Occupational therapy</option><option>Learning support</option></select>
+        </div>
+        <div class="field">
+          <label for="pay">Payment Option</label>
+          <select id="pay" name="pay"><option value="">Any</option><option>Insurance</option><option>Private pay</option><option>HSA / FSA</option></select>
+        </div>
+        <button type="submit">Get Matched</button>
+      </form>
+
+      <p class="hero-helper">Can&rsquo;t find your insurance? Not sure what you need? Need faster access? <a href="/contact.html">Contact us and our care coordinators will help guide you.</a></p>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="art-card art-card-1">
-        <svg viewBox="0 0 220 240" width="220" height="240">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#a7e8e3"/><stop offset="1" stop-color="#0a8a8a"/></linearGradient>
-          </defs>
-          <rect width="220" height="240" rx="24" fill="url(#g1)"/>
-          <circle cx="110" cy="98" r="38" fill="#fff7e6"/>
-          <path d="M55 220c0-30 25-54 55-54s55 24 55 54" fill="#fff7e6"/>
-          <circle cx="100" cy="92" r="3" fill="#0a3a3a"/><circle cx="120" cy="92" r="3" fill="#0a3a3a"/>
-          <path d="M100 108c4 5 16 5 20 0" fill="none" stroke="#0a3a3a" stroke-width="2.4" stroke-linecap="round"/>
-        </svg>
-        <div class="art-meta">
-          <strong>Dr. Maya Reyes, Psy.D.</strong>
-          <span>Autism &amp; ADHD evaluations · Orlando</span>
-          <span class="art-badge">Next opening: Thu</span>
+  </section>
+
+  <!-- Trust badges row -->
+  <section class="badges" aria-label="What you get with Aldea">
+    <div class="container badge-track">
+      <div class="badge-item"><span class="bg-dot">⚡</span> Instant HSA / FSA booking</div>
+      <div class="badge-item t-teal"><span class="bg-dot">⚡</span> Instant private-pay booking</div>
+      <div class="badge-item t-pink"><span class="bg-dot">2×</span> Faster evaluation &amp; therapy scheduling</div>
+      <div class="badge-item"><span class="bg-dot">✓</span> Licensed, board-certified clinicians</div>
+      <div class="badge-item t-teal"><span class="bg-dot">🔒</span> HIPAA-compliant intake</div>
+      <div class="badge-item t-pink"><span class="bg-dot">★</span> 5.0 parent experience</div>
+    </div>
+  </section>
+
+  <!-- Service pills -->
+  <section class="pills">
+    <div class="container">
+      <div class="pill-cloud" aria-label="Browse care by need">
+        <a href="/providers.html?tag=autism-eval">Autism evaluation</a>
+        <a href="/providers.html?tag=adhd">ADHD testing</a>
+        <a href="/providers.html?tag=gifted">Gifted testing</a>
+        <a href="/providers.html?tag=learning">Learning disability</a>
+        <a href="/providers.html?tag=cognitive">Cognitive testing</a>
+        <a href="/providers.html?tag=speech">Speech delay</a>
+        <a href="/providers.html?tag=autism-therapy">Autism therapy</a>
+        <a href="/providers.html?tag=behavior">Behavior challenges</a>
+        <a href="/providers.html?tag=emotion">Emotional regulation</a>
+        <a href="/providers.html?tag=social">Social skills training</a>
+        <a href="/providers.html?tag=daily">Daily routines</a>
+        <a href="/providers.html?tag=tantrum">Tantrum support</a>
+        <a href="/providers.html?tag=language">Language development</a>
+        <a href="/providers.html?tag=articulation">Articulation / speech sounds</a>
+        <a href="/providers.html?tag=social-comm">Social communication</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>How it works for families</h2>
+        <p>A structured approach designed around your child — usually a week from intake to first appointment.</p>
+      </div>
+      <div class="steps-board">
+        <img class="deco deco-1" src="/assets/img/website-geometric-shape.png" alt="" />
+        <img class="deco deco-2" src="/assets/img/website-geometric-shape2.png" alt="" />
+
+        <div class="step-card step-pink">
+          <h3><span class="step-num">1</span> Tell us about your child</h3>
+          <p>Answer a few quick questions — less than a minute.</p>
+        </div>
+        <div class="step-card step-photo">
+          <img src="/assets/img/family.png" alt="A family of three smiling on a couch." />
+        </div>
+        <div class="step-card">
+          <h3><span class="step-num">2</span> Get matched</h3>
+          <p>Receive your personalized provider match instantly — no waitlist.</p>
+        </div>
+        <div class="step-card">
+          <h3><span class="step-num">3</span> Request your first appointment</h3>
+          <p>Send a booking request and get your child started.</p>
         </div>
       </div>
-      <div class="art-card art-card-2">
-        <div class="mini-stat">
-          <span class="mini-num">48h</span>
-          <span class="mini-label">Average match time</span>
+      <div class="steps-cta"><a class="btn btn-ink btn-lg" href="#match">Start intake</a></div>
+    </div>
+  </section>
+
+  <!-- About card -->
+  <section class="section section-cream">
+    <div class="container about-row">
+      <div class="about-photo">
+        <img src="/assets/img/siblings.png" alt="Two siblings laughing together." />
+      </div>
+      <div class="about-copy">
+        <span class="kicker">Pediatric care platform</span>
+        <h2>Serving families across Florida</h2>
+        <p class="lead">Founded by pediatric specialists. Aldea helps families access trusted developmental care faster — without the runaround, the six-month waitlist, or the dead-end phone trees.</p>
+        <a class="btn btn-ink" href="/providers.html">Find a provider</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>Top Aldea services</h2></div>
+      <div class="svc-grid">
+        <article class="svc svc-1">
+          <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21c-1-2-6-6-6-11a6 6 0 0 1 12 0c0 5-5 9-6 11z"/></svg></div>
+          <h3>ABA Therapy</h3>
+          <p>Personalized behavior support to help your child build skills, confidence, and independence.</p>
+          <a class="more" href="/providers.html?tag=aba">Explore ABA →</a>
+        </article>
+        <article class="svc svc-2">
+          <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M9 11h6"/><path d="M9 14h4"/></svg></div>
+          <h3>Clinical Psychology</h3>
+          <p>Comprehensive evaluations for autism, ADHD, anxiety, giftedness and learning differences — all in one place.</p>
+          <a class="more" href="/providers.html?tag=eval">See evaluators →</a>
+        </article>
+        <article class="svc svc-3">
+          <div class="svc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 6h12l4 4-4 4H4z"/><path d="M8 18v-2"/></svg></div>
+          <h3>Speech Therapy</h3>
+          <p>Speech and language therapy focused on improving communication, clarity and confidence.</p>
+          <a class="more" href="/providers.html?tag=speech">Browse SLPs →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured providers -->
+  <section class="section section-offwhite">
+    <div class="container">
+      <div class="section-head"><h2>Featured providers</h2><p>A handful of the clinicians actively accepting new families this month.</p></div>
+      <div class="providers-row">
+        <article class="provider-card">
+          <div class="provider-photo"><img src="/assets/img/child-1.png" alt="" /></div>
+          <div class="provider-body">
+            <div class="provider-name">Dr. Maya Reyes, Psy.D.</div>
+            <div class="provider-role">Autism &amp; ADHD evaluations</div>
+            <div class="provider-tags"><span>Orlando</span><span>Bilingual</span><span>Ages 3–17</span></div>
+          </div>
+        </article>
+        <article class="provider-card">
+          <div class="provider-photo"><img src="/assets/img/child-2.png" alt="" /></div>
+          <div class="provider-body">
+            <div class="provider-name">James Okafor, BCBA</div>
+            <div class="provider-role">ABA therapy · in-home</div>
+            <div class="provider-tags"><span>Tampa</span><span>Medicaid</span></div>
+          </div>
+        </article>
+        <article class="provider-card">
+          <div class="provider-photo"><img src="/assets/img/child-3.png" alt="" /></div>
+          <div class="provider-body">
+            <div class="provider-name">Priya Shah, M.S., CCC-SLP</div>
+            <div class="provider-role">Speech-language pathology</div>
+            <div class="provider-tags"><span>Miami</span><span>AAC certified</span></div>
+          </div>
+        </article>
+        <article class="provider-card">
+          <div class="provider-photo"><img src="/assets/img/happy-child.png" alt="" /></div>
+          <div class="provider-body">
+            <div class="provider-name">Elena Kovac, OTR/L</div>
+            <div class="provider-role">Occupational therapy</div>
+            <div class="provider-tags"><span>Orlando</span><span>Sensory integration</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="steps-cta"><a class="btn btn-outline" href="/providers.html">See all providers</a></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why families &amp; providers love Aldea</h2>
+        <p>Real stories from parents and professionals who&rsquo;ve found their perfect match through our network.</p>
+      </div>
+      <div class="t-grid">
+        <figure class="t-card">
+          <blockquote class="t-quote">Through the Aldea Directory, I found a psychologist for an ADHD evaluation and later an occupational therapist, all in one platform. I love that it&rsquo;s made just for kids&rsquo; services and that I could choose between insurance and concierge options. Everything felt organized, family-friendly, and trustworthy. Highly recommend it to any parent navigating this process for the first time!</blockquote>
+          <figcaption class="t-attr">
+            <span class="t-avatar">SM</span>
+            <div><div class="t-name">Sofia Menendez</div><div class="t-role">Parent · Miami</div></div>
+          </figcaption>
+        </figure>
+        <figure class="t-card">
+          <blockquote class="t-quote">The support and communication are great, and payments have been smooth and timely. I love that the platform is exclusively pediatric-focused, because it means I&rsquo;m connecting with families who truly need my services. It feels like being part of a mission-driven network rather than just another listing site.</blockquote>
+          <figcaption class="t-attr">
+            <span class="t-avatar">BR</span>
+            <div><div class="t-name">Barbara Roberts</div><div class="t-role">Aldea provider · BCBA</div></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment options -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Payment</span>
+        <h2>Accessing care should be easy</h2>
+        <p>We offer flexible payment options. We&rsquo;ll verify your benefits or show you transparent pricing upfront.</p>
+      </div>
+      <div class="pay-grid">
+        <article class="pay">
+          <img src="/assets/img/insurance.png" alt="" />
+          <h3>Major insurance plans</h3>
+          <p>Find providers who accept major insurance plans, so families can get started without unnecessary out-of-pocket costs.</p>
+        </article>
+        <article class="pay">
+          <img src="/assets/img/private-pay.png" alt="" />
+          <h3>Private pay</h3>
+          <p>Connect with providers who offer private-pay options for flexible scheduling, specialized services, or faster access to care.</p>
+        </article>
+        <article class="pay">
+          <img src="/assets/img/hsa.png" alt="" />
+          <h3>HSA / FSA</h3>
+          <p>Use HSA or FSA funds with eligible providers to pay for evaluations, therapy and support services.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Screeners -->
+  <section class="section section-offwhite">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Free Screeners</span>
+        <h2>Not a diagnosis. A starting point.</h2>
+        <p>Speech, autism, ADHD and language screeners — written for parents, by clinicians.</p>
+      </div>
+      <div class="screen-grid">
+        <a class="screen-card c-1" href="/screeners.html#speech">
+          <h3>Speech<br/>screening</h3>
+          <span class="go">Start →</span>
+        </a>
+        <a class="screen-card c-2" href="/screeners.html#autism">
+          <h3>Autism<br/>screening</h3>
+          <span class="go">Start →</span>
+        </a>
+        <a class="screen-card c-3" href="/screeners.html#adhd">
+          <h3>ADHD<br/>screening</h3>
+          <span class="go">Start →</span>
+        </a>
+        <a class="screen-card c-4" href="/screeners.html#language">
+          <h3>Language<br/>screening</h3>
+          <span class="go">Start →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- For providers band -->
+  <section class="section">
+    <div class="container">
+      <div class="fp-band">
+        <div>
+          <span class="kicker" style="color:var(--yellow)">For Providers</span>
+          <h2>Join Florida&rsquo;s fastest-growing pediatric network</h2>
+          <p style="color:#dde7ed;font-size:16.5px;max-width:50ch">Whether you&rsquo;re starting a side hustle, seeing one client per week, or already have an established private practice — we&rsquo;re here for you.</p>
+          <ul>
+            <li>Take insurance without the headache</li>
+            <li>Fill your caseload with new families</li>
+            <li>Set your own schedule</li>
+          </ul>
+          <div style="margin-top:26px"><a class="btn btn-yellow" href="/for-providers.html">List your practice</a></div>
         </div>
-        <div class="mini-stat">
-          <span class="mini-num">96%</span>
-          <span class="mini-label">Parents would refer a friend</span>
+        <div class="fp-art">
+          <img src="/assets/img/babygirl.png" alt="A toddler smiling." />
         </div>
       </div>
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="logos" aria-label="Insurance and partners">
-  <div class="container logos-row">
-    <span class="logos-label">Works with most major plans</span>
-    <ul>
-      <li>Aetna</li><li>BCBS FL</li><li>Cigna</li><li>UnitedHealthcare</li><li>Humana</li><li>Tricare</li><li>HSA / FSA</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="services">
-  <div class="container">
-    <header class="section-head">
-      <h2>Browse care by what your family needs</h2>
-      <p>Each category is staffed by licensed, background-checked clinicians who specialize in pediatric and neurodivergent care.</p>
-    </header>
-    <ul class="cat-grid">
-      <li class="cat">
-        <div class="cat-art cat-1"></div>
-        <h3>Autism &amp; ADHD evaluations</h3>
-        <p>Comprehensive psychological evaluations from licensed clinicians, with results in weeks — not months.</p>
-        <a class="cat-link" href="/providers.html?service=evaluations">See providers →</a>
-      </li>
-      <li class="cat">
-        <div class="cat-art cat-2"></div>
-        <h3>ABA therapy</h3>
-        <p>Personalized, play-based behavior support delivered at home, in clinic, or in school settings.</p>
-        <a class="cat-link" href="/providers.html?service=aba">See providers →</a>
-      </li>
-      <li class="cat">
-        <div class="cat-art cat-3"></div>
-        <h3>Speech &amp; language</h3>
-        <p>From early communication to articulation and AAC — therapy that meets your child where they are.</p>
-        <a class="cat-link" href="/providers.html?service=speech">See providers →</a>
-      </li>
-      <li class="cat">
-        <div class="cat-art cat-4"></div>
-        <h3>Occupational therapy</h3>
-        <p>Sensory regulation, fine motor and daily-living skills — built around your child&rsquo;s goals.</p>
-        <a class="cat-link" href="/providers.html?service=ot">See providers →</a>
-      </li>
-      <li class="cat">
-        <div class="cat-art cat-5"></div>
-        <h3>Learning &amp; tutoring</h3>
-        <p>Support for dyslexia, dyscalculia and learning differences from credentialed specialists.</p>
-        <a class="cat-link" href="/providers.html?service=learning">See providers →</a>
-      </li>
-      <li class="cat">
-        <div class="cat-art cat-6"></div>
-        <h3>Parent coaching</h3>
-        <p>One-on-one guidance to navigate diagnosis, school plans (IEP/504) and day-to-day life.</p>
-        <a class="cat-link" href="/providers.html?service=coaching">See providers →</a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section-alt" id="how">
-  <div class="container">
-    <header class="section-head">
-      <h2>How Aldea Connect works</h2>
-      <p>Three steps from worry to a first appointment.</p>
-    </header>
-    <ol class="steps">
-      <li><span class="step-num">1</span><h3>Tell us about your child</h3><p>A 3-minute intake covers age, concerns, location and insurance. No diagnosis required.</p></li>
-      <li><span class="step-num">2</span><h3>Get matched in 48 hours</h3><p>A care navigator hand-picks 2–3 providers with real openings — not a waitlist.</p></li>
-      <li><span class="step-num">3</span><h3>Book and begin care</h3><p>Schedule directly, verify benefits, and start your first session in days.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="section" id="featured">
-  <div class="container">
-    <header class="section-head">
-      <h2>Meet a few of our providers</h2>
-      <p>Every clinician on Aldea Connect is licensed in Florida, background-checked and manually reviewed.</p>
-    </header>
-    <ul class="provider-grid">
-      <li class="provider">
-        <div class="provider-photo p1"></div>
-        <div class="provider-body">
-          <div class="provider-top">
-            <strong>Dr. Maya Reyes, Psy.D.</strong>
-            <span class="rating" aria-label="4.9 of 5 stars">★ 4.9</span>
-          </div>
-          <p class="provider-spec">Autism &amp; ADHD evaluations · Orlando &amp; telehealth</p>
-          <ul class="chip-row"><li>In-network</li><li>Bilingual</li><li>Ages 3–17</li></ul>
-          <div class="provider-foot">
-            <span class="price">From $185/visit</span>
-            <a class="btn btn-soft" href="/providers.html#maya">View profile</a>
-          </div>
-        </div>
-      </li>
-      <li class="provider">
-        <div class="provider-photo p2"></div>
-        <div class="provider-body">
-          <div class="provider-top">
-            <strong>James Okafor, BCBA</strong>
-            <span class="rating" aria-label="5 of 5 stars">★ 5.0</span>
-          </div>
-          <p class="provider-spec">ABA therapy · Tampa, in-home</p>
-          <ul class="chip-row"><li>Accepts Medicaid</li><li>Early intervention</li></ul>
-          <div class="provider-foot">
-            <span class="price">Insurance billed</span>
-            <a class="btn btn-soft" href="/providers.html#james">View profile</a>
-          </div>
-        </div>
-      </li>
-      <li class="provider">
-        <div class="provider-photo p3"></div>
-        <div class="provider-body">
-          <div class="provider-top">
-            <strong>Priya Shah, M.S., CCC-SLP</strong>
-            <span class="rating" aria-label="4.8 of 5 stars">★ 4.8</span>
-          </div>
-          <p class="provider-spec">Speech-language pathology · Miami</p>
-          <ul class="chip-row"><li>AAC certified</li><li>Bilingual</li></ul>
-          <div class="provider-foot">
-            <span class="price">From $140/visit</span>
-            <a class="btn btn-soft" href="/providers.html#priya">View profile</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <div class="centered"><a class="btn btn-primary" href="/providers.html">See all providers</a></div>
-  </div>
-</section>
-
-<section class="section section-alt" id="safety">
-  <div class="container safety-grid">
-    <div>
-      <h2>Safety first — and not just on paper</h2>
-      <p>Every provider is verified before a single family sees their profile. We require:</p>
-      <ul class="check-list">
-        <li>Active Florida licensure verified through the state DOH</li>
-        <li>Level 2 background check with continuous monitoring</li>
-        <li>References from previous clinical supervisors</li>
-        <li>Manual review of credentials by our clinical team</li>
-        <li>Annual recredentialing and complaint review</li>
-      </ul>
-      <p class="callout">All matches, intake and billing happen through Aldea Connect — never off-platform.</p>
-    </div>
-    <aside class="badges">
-      <div class="badge"><strong>Level 2</strong><span>Background check</span></div>
-      <div class="badge"><strong>HIPAA</strong><span>Secure intake</span></div>
-      <div class="badge"><strong>FL DOH</strong><span>License verified</span></div>
-      <div class="badge"><strong>SOC 2</strong><span>Type II hosting</span></div>
-    </aside>
-  </div>
-</section>
-
-<section class="section" id="match">
-  <div class="container match-grid">
-    <div>
-      <span class="eyebrow">Free, 3-minute intake</span>
-      <h2>Get matched with a provider</h2>
-      <p>Tell us a little about your child and a care navigator will reach out within one business day.</p>
-      <ul class="check-list small">
-        <li>No insurance needed to start</li>
-        <li>Most families book a first visit within 7 days</li>
-        <li>Your information stays private</li>
-      </ul>
-    </div>
-    <form class="card form" id="intake-form" novalidate>
-      <div class="row two">
-        <label>Parent first name<input name="parent" required autocomplete="given-name" /></label>
-        <label>Child&rsquo;s age<input name="age" inputmode="numeric" pattern="[0-9]*" required /></label>
+  <!-- Match form -->
+  <section class="section section-cream" id="match">
+    <div class="container match-grid">
+      <div>
+        <span class="kicker">Free intake</span>
+        <h2>Tell us about your child</h2>
+        <p class="lead">It takes about three minutes. A care coordinator emails you within one business day with two to three providers who can see your family this week.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:8px;color:var(--ink-2);font-weight:600">
+          <li>✓ No insurance needed to start</li>
+          <li>✓ Most families book a first visit within 7 days</li>
+          <li>✓ Your information stays private</li>
+        </ul>
       </div>
-      <label>Email<input type="email" name="email" required autocomplete="email" /></label>
-      <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel" /></label>
-      <label>What kind of care are you looking for?
-        <select name="service" required>
-          <option value="">Select one…</option>
-          <option>Autism or ADHD evaluation</option>
-          <option>ABA therapy</option>
-          <option>Speech therapy</option>
-          <option>Occupational therapy</option>
-          <option>Learning &amp; tutoring</option>
-          <option>Not sure yet</option>
-        </select>
-      </label>
-      <label>Anything we should know?<textarea name="notes" rows="3" placeholder="School concerns, recent evaluation, language preference…"></textarea></label>
-      <button class="btn btn-primary btn-lg" type="submit">Request a match</button>
-      <p class="fineprint">By submitting you agree to our <a href="/privacy.html">privacy policy</a>. We&rsquo;ll never sell your data.</p>
-      <div class="form-success" hidden role="status">
-        <strong>Thanks — we got it.</strong> A care navigator will email you within one business day.
-      </div>
-    </form>
-  </div>
-</section>
-
-<section class="section section-alt" id="stories">
-  <div class="container">
-    <header class="section-head">
-      <h2>Parents in our community</h2>
-    </header>
-    <ul class="quotes">
-      <li>
-        <blockquote>“We went from a 9-month waitlist to a confirmed evaluation in five days. The clinician was warm, thorough and finally gave us a path forward.”</blockquote>
-        <cite><span class="who">Andrea M.</span><span class="where">Mom of 2 · Orlando</span></cite>
-      </li>
-      <li>
-        <blockquote>“My son&rsquo;s BCBA actually plays with him. He looks forward to therapy. That&rsquo;s a sentence I never thought I&rsquo;d type.”</blockquote>
-        <cite><span class="who">Daniel R.</span><span class="where">Dad of 1 · Tampa</span></cite>
-      </li>
-      <li>
-        <blockquote>“As a speech therapist, Aldea Connect lets me focus on kids — not on chasing referrals or fighting paperwork.”</blockquote>
-        <cite><span class="who">Priya S., CCC-SLP</span><span class="where">Provider · Miami</span></cite>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="faq">
-  <div class="container faq">
-    <h2>Frequently asked</h2>
-    <details><summary>Does Aldea Connect take insurance?</summary><p>Most providers are in-network with Aetna, BCBS FL, Cigna, UnitedHealthcare, Humana and Tricare. We verify benefits before your first visit. Private pay, HSA and FSA are also accepted.</p></details>
-    <details><summary>How fast can we actually be seen?</summary><p>Median match time is 48 hours, median first-visit booking is 7 days. We only list providers with real openings — there is no waitlist on Aldea Connect.</p></details>
-    <details><summary>Is this telehealth or in person?</summary><p>Both. Evaluations and speech are often available via telehealth statewide; ABA and OT are typically in-home or in-clinic in Orlando, Tampa, Miami and Jacksonville.</p></details>
-    <details><summary>Who is Aldea Connect for?</summary><p>Florida families with children ages 0–18 navigating autism, ADHD, learning differences, speech delays, sensory needs or a recent diagnosis — and the clinicians who care for them.</p></details>
-    <details><summary>What does it cost to use the platform?</summary><p>Nothing for families. Providers pay a flat monthly subscription so we never take a cut of your care.</p></details>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container cta-row">
-    <div>
-      <h2>Are you a clinician?</h2>
-      <p>Join a curated network of pediatric and neurodivergent specialists across Florida. Flat monthly subscription, no per-visit fees.</p>
+      <form class="card form" id="intake-form" novalidate>
+        <div class="row">
+          <label>Parent name<input name="parent" required autocomplete="given-name" /></label>
+          <label>Child&rsquo;s age<input name="age" inputmode="numeric" pattern="[0-9]*" required /></label>
+        </div>
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel" /></label>
+        <label>What kind of care?
+          <select name="service" required>
+            <option value="">Select…</option>
+            <option>Autism or ADHD evaluation</option>
+            <option>ABA therapy</option>
+            <option>Speech therapy</option>
+            <option>Occupational therapy</option>
+            <option>Learning &amp; tutoring</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label>Anything we should know? (optional)<textarea name="notes" rows="3" placeholder="School concerns, recent evaluation, language preference…"></textarea></label>
+        <button class="btn btn-yellow btn-lg" type="submit">Request a match</button>
+        <p class="fineprint">By submitting you agree to our <a href="/privacy.html">privacy policy</a>. We&rsquo;ll never sell your data.</p>
+        <div class="form-success" hidden role="status"><strong>Thanks — we got it.</strong> A care coordinator will email you within one business day.</div>
+      </form>
     </div>
-    <a class="btn btn-light btn-lg" href="/for-providers.html">List your practice</a>
-  </div>
-</section>
+  </section>
+
+  <!-- Learning Center -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Aldea Learning Center</span>
+        <h2>Expert tips, parent guides &amp; developmental insights</h2>
+        <p>Articles and resources from our licensed clinicians to help your child thrive.</p>
+      </div>
+      <div class="lc-filters" id="lc-filters">
+        <button data-tag="all" aria-pressed="true">All topics</button>
+        <button data-tag="parenting">Parenting tips</button>
+        <button data-tag="development">Development</button>
+        <button data-tag="bilingualism">Bilingualism</button>
+        <button data-tag="guides">Parent guides</button>
+        <button data-tag="therapy">Therapy</button>
+        <button data-tag="language">Language</button>
+      </div>
+      <div class="lc-grid" id="lc-grid">
+        <a class="lc-card" data-tags="parenting" href="/learn.html#toy">
+          <div class="lc-photo"><img src="/assets/img/blog/baby-girl.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Parenting tips</span><h3>Tips for choosing the right toy for speech development</h3></div>
+        </a>
+        <a class="lc-card" data-tags="development" href="/learn.html#milestones">
+          <div class="lc-photo"><img src="/assets/img/blog/milestone.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Development</span><h3>Expressive language developmental milestones</h3></div>
+        </a>
+        <a class="lc-card" data-tags="bilingualism" href="/learn.html#bilingual">
+          <div class="lc-photo"><img src="/assets/img/blog/bilingual.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Bilingualism</span><h3>Common articulation differences between English and Spanish</h3></div>
+        </a>
+        <a class="lc-card" data-tags="parenting" href="/learn.html#talking">
+          <div class="lc-photo"><img src="/assets/img/blog/hello.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Parenting tips</span><h3>How to get your child talking</h3></div>
+        </a>
+        <a class="lc-card" data-tags="bilingualism" href="/learn.html#confusion">
+          <div class="lc-photo"><img src="/assets/img/blog/code-switching.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Bilingualism</span><h3>Does speaking another language at home confuse kids?</h3></div>
+        </a>
+        <a class="lc-card" data-tags="guides" href="/learn.html#early-signs">
+          <div class="lc-photo"><img src="/assets/img/blog/signs.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Parent guides</span><h3>Early signs of autism: a parent&rsquo;s guide to action</h3></div>
+        </a>
+        <a class="lc-card" data-tags="therapy" href="/learn.html#aba">
+          <div class="lc-photo"><img src="/assets/img/blog/support.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Therapy</span><h3>Supporting children with autism: how ABA therapy helps</h3></div>
+        </a>
+        <a class="lc-card" data-tags="development" href="/learn.html#comm">
+          <div class="lc-photo"><img src="/assets/img/blog/happy-baby.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Development</span><h3>Early communication milestones and autism evaluation</h3></div>
+        </a>
+        <a class="lc-card" data-tags="language" href="/learn.html#code">
+          <div class="lc-photo"><img src="/assets/img/blog/child-1.png" alt="" /></div>
+          <div class="lc-body"><span class="lc-tag">Language</span><h3>Understanding code-switching</h3></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-offwhite">
+    <div class="container">
+      <div class="section-head"><h2>Frequently asked</h2></div>
+      <div class="faq-wrap faq">
+        <details>
+          <summary>What is Aldea?</summary>
+          <div class="body">The Aldea Directory is a trusted online platform that helps parents find qualified pediatric providers — including speech therapists, psychologists, ABA therapists, occupational therapists and developmental specialists — all in one place. Our mission is to make it easier for families to access care for autism, ADHD, speech delays and early childhood development.</div>
+        </details>
+        <details>
+          <summary>Are the providers on Aldea verified and licensed?</summary>
+          <div class="body">Yes. Every provider holds an active, unrestricted Florida license verified through the state DOH, passes a Level 2 background check, and is manually credentialed by our clinical team before they ever appear in your matches.</div>
+        </details>
+        <details>
+          <summary>Does Aldea accept insurance or private pay?</summary>
+          <div class="body">Both. Most providers are in-network with Aetna, BCBS FL, Cigna, UnitedHealthcare, Humana and Tricare. Private pay, HSA and FSA are also accepted. We verify benefits before your first visit.</div>
+        </details>
+        <details>
+          <summary>How does Aldea help me find the right provider?</summary>
+          <div class="body">Tell us about your child in a quick three-minute intake. A care coordinator hand-picks two or three providers who fit your child&rsquo;s age, location, language and the kind of care you&rsquo;re looking for — and sends them to you within one business day.</div>
+        </details>
+        <details>
+          <summary>What ages of children does Aldea support?</summary>
+          <div class="body">Ages 0–18. We have providers focused on early intervention, school-age evaluation and adolescent therapy.</div>
+        </details>
+        <details>
+          <summary>How do I schedule an appointment through Aldea?</summary>
+          <div class="body">Once you&rsquo;re matched, you can book directly from your inbox. Your care coordinator handles benefits verification so there are no surprises at your first visit.</div>
+        </details>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer class="foot">
   <div class="container foot-grid">
-    <div>
-      <a class="brand" href="/" aria-label="Aldea Connect home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg>
-        </span>
-        <span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span>
+    <div class="foot-brand">
+      <a class="brand" href="/" style="color:#fff">
+        <img class="brand-logo" src="/assets/img/logo/aldea-logo.svg" alt="" style="filter:brightness(0) invert(1)" />
+        <span><span class="brand-wordmark">Aldea</span><span class="brand-sub">Connect Directory</span></span>
       </a>
       <p class="foot-tag">Pediatric care, matched in days. Florida-based, family-first.</p>
+      <p class="foot-tag" style="margin-top:14px">
+        <strong style="color:#fff">Orlando</strong><br/>100 E Pine Street, Suite 116, Orlando, FL 32801<br/>
+        <strong style="color:#fff">Tampa</strong><br/>603 E Jackson St, Suite 3, Tampa, FL 33602
+      </p>
     </div>
     <div>
-      <h4>For families</h4>
-      <a href="/providers.html">Find a provider</a>
-      <a href="/screeners.html">Free screeners</a>
-      <a href="/how-it-works.html">How it works</a>
-      <a href="#faq">FAQ</a>
-    </div>
-    <div>
-      <h4>For providers</h4>
-      <a href="/for-providers.html">Join the network</a>
-      <a href="/for-providers.html#pricing">Pricing</a>
-      <a href="/for-providers.html#resources">Resources</a>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <a href="/about.html">About</a>
+      <h4>Quick links</h4>
+      <a href="/">Home</a>
+      <a href="/about.html">About us</a>
       <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
+      <a href="/learn.html">Learn</a>
+      <a href="#stories">Testimonials</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="/providers.html?tag=aba">ABA therapy</a>
+      <a href="/providers.html?tag=speech">Speech therapy</a>
+      <a href="/providers.html?tag=adhd">ADHD evaluations</a>
+      <a href="/providers.html?tag=autism-eval">Autism evaluations</a>
+      <a href="/providers.html?tag=ot">Occupational therapy</a>
+    </div>
+    <div>
+      <h4>Locations</h4>
+      <a href="/providers.html?loc=orlando">Orlando</a>
+      <a href="/providers.html?loc=tampa">Tampa</a>
+      <a href="/providers.html?loc=miami">Miami</a>
+      <a href="/providers.html?loc=jacksonville">Jacksonville</a>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <a href="#faq">FAQ</a>
+      <a href="/contact.html">Contact us</a>
+      <a href="/for-providers.html">For providers</a>
     </div>
   </div>
   <div class="container foot-base">
-    <span>© <span id="yr"></span> Aldea Connect. All matching, intake and billing happen on platform.</span>
-    <span>Orlando · Tampa · Miami · Jacksonville</span>
+    <span>© <span id="yr">2026</span> Aldea Connect. All rights reserved.</span>
+    <span class="foot-legal">
+      <a href="/terms.html">Terms &amp; conditions</a>
+      <a href="/privacy.html">Privacy policy</a>
+    </span>
   </div>
 </footer>
 

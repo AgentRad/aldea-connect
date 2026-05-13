@@ -17,7 +17,6 @@
       mobileMenu.hidden = open;
       hamburger.setAttribute("aria-expanded", String(!open));
     });
-    // Close on link click
     $$("#mobile-menu a").forEach((a) =>
       a.addEventListener("click", () => {
         mobileMenu.dataset.open = "false";
@@ -27,12 +26,11 @@
     );
   }
 
-  // Intake form: client-side acknowledgement (no backend required for v1)
+  // Intake form acknowledgement
   const form = $("#intake-form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      // Basic required check
       const required = $$("[required]", form);
       let ok = true;
       required.forEach((el) => {
@@ -44,8 +42,6 @@
         }
       });
       if (!ok) return;
-
-      // Persist locally so it isn't lost; real submission goes to /api/intake later
       try {
         const data = Object.fromEntries(new FormData(form).entries());
         data._ts = new Date().toISOString();
@@ -53,15 +49,31 @@
         queue.push(data);
         localStorage.setItem("aldea_intake_queue", JSON.stringify(queue));
       } catch (_) {}
-
       const success = $(".form-success", form);
-      $$("label, .btn-primary, .fineprint", form).forEach((el) => (el.style.display = "none"));
+      $$("label, .btn-yellow, .fineprint", form).forEach((el) => (el.style.display = "none"));
       if (success) success.hidden = false;
+      success && success.scrollIntoView({ behavior: "smooth", block: "center" });
     });
   }
 
-  // Provider filters (works on /providers.html)
-  const filterBar = $(".filters");
+  // Learning Center filter
+  const lcFilters = $("#lc-filters");
+  const lcGrid = $("#lc-grid");
+  if (lcFilters && lcGrid) {
+    const buttons = $$("button", lcFilters);
+    const cards = $$(".lc-card", lcGrid);
+    const apply = (tag) => {
+      buttons.forEach((b) => b.setAttribute("aria-pressed", b.dataset.tag === tag ? "true" : "false"));
+      cards.forEach((c) => {
+        const tags = (c.dataset.tags || "").split(",");
+        c.style.display = tag === "all" || tags.includes(tag) ? "" : "none";
+      });
+    };
+    buttons.forEach((b) => b.addEventListener("click", () => apply(b.dataset.tag)));
+  }
+
+  // Provider list filters + search (on /providers.html)
+  const filterBar = $(".filter-bar");
   if (filterBar) {
     const items = $$("[data-tags]");
     const buttons = $$("button", filterBar);
@@ -73,26 +85,22 @@
       });
     };
     buttons.forEach((b) => b.addEventListener("click", () => apply(b.dataset.tag)));
-
-    // Honor ?service=xyz from the homepage links
     const qs = new URLSearchParams(location.search);
-    const initial = qs.get("service");
+    const initial = qs.get("tag") || qs.get("service");
     if (initial && buttons.some((b) => b.dataset.tag === initial)) apply(initial);
   }
-
-  // Provider search
   const search = $("#provider-search");
   if (search) {
     search.addEventListener("input", () => {
       const q = search.value.trim().toLowerCase();
-      $$(".provider").forEach((card) => {
+      $$(".provider-card").forEach((card) => {
         const hay = card.textContent.toLowerCase();
         card.style.display = !q || hay.includes(q) ? "" : "none";
       });
     });
   }
 
-  // Screener mini-quiz (on /screeners.html)
+  // Screener quiz (kept)
   const quiz = $("#screener");
   if (quiz) {
     const questions = $$(".q", quiz);
@@ -109,7 +117,7 @@
       let band, message;
       if (ratio < 0.34) {
         band = "Low";
-        message = "Your answers suggest few flags right now. If you still have concerns, our care navigators can help.";
+        message = "Your answers suggest few flags right now. If you still have concerns, our care coordinators can help.";
       } else if (ratio < 0.67) {
         band = "Moderate";
         message = "A few flags showed up — a quick conversation with a clinician is worth scheduling.";

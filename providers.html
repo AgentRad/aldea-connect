@@ -3,58 +3,59 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Find a provider — Aldea Connect</title>
-<meta name="description" content="Browse vetted pediatric providers across Florida — autism & ADHD evaluations, ABA, speech, OT, learning support and parent coaching." />
+<title>Find a provider — Aldea</title>
+<meta name="description" content="Browse vetted pediatric providers across Florida." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/styles.css" />
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/assets/img/logo/aldea-logo.svg" type="image/svg+xml" />
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav" id="nav">
-  <div class="container nav-row">
-    <a class="brand" href="/" aria-label="Aldea Connect home">
-      <span class="brand-mark"><svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg></span>
-      <span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="/providers.html" aria-current="page">Find a provider</a>
-      <a href="/for-providers.html">For providers</a>
-      <a href="/how-it-works.html">How it works</a>
-      <a href="/screeners.html">Free screeners</a>
-    </nav>
-    <div class="nav-cta">
-      <a class="link" href="/login.html">Log in</a>
-      <a class="btn btn-primary" href="/#match">Get matched</a>
+<header>
+  <div class="marquee"><div class="marquee-track">
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+    <span>We&rsquo;re actively adding providers every week. Please check back weekly to find your provider</span>
+  </div></div>
+  <nav class="nav">
+    <div class="container nav-row">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/img/logo/aldea-logo.svg" alt="" /><span><span class="brand-wordmark">Aldea</span><span class="brand-sub">Connect Directory</span></span></a>
+      <div class="nav-links">
+        <a href="/about.html">About Us</a>
+        <a href="/for-providers.html">For Providers</a>
+        <a href="/learn.html">Learn</a>
+        <a href="/screeners.html">Free Screeners</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="nav-cta"><a class="signin" href="/login.html">Sign In</a><a class="btn btn-yellow" href="/#match">Get Started</a></div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="/providers.html">Find a provider</a>
-    <a href="/for-providers.html">For providers</a>
-    <a href="/how-it-works.html">How it works</a>
-    <a href="/screeners.html">Free screeners</a>
-    <a href="/login.html">Log in</a>
-    <a class="btn btn-primary" href="/#match">Get matched</a>
-  </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/about.html">About Us</a><a href="/for-providers.html">For Providers</a><a href="/learn.html">Learn</a><a href="/screeners.html">Free Screeners</a><a href="/contact.html">Contact Us</a><a href="/login.html">Sign In</a><a class="btn btn-yellow" href="/#match" style="margin-top:12px">Get Started</a>
+    </div>
+  </nav>
 </header>
 
 <main id="main">
 
 <section class="page-head">
   <div class="container">
-    <span class="eyebrow">Florida network</span>
+    <img class="deco" src="/assets/img/website-geometric-shape2.png" alt="" />
+    <span class="kicker">Florida network</span>
     <h1>Find your child&rsquo;s next provider</h1>
-    <p>Every clinician below has openings this month. Filter by what your family needs.</p>
+    <p class="lead">Every clinician here has openings this month. Filter by what your family needs.</p>
     <div class="search-row">
       <input id="provider-search" type="search" placeholder="Search by name, city, language…" aria-label="Search providers" />
     </div>
-    <div class="filters" role="group" aria-label="Filter by service">
+    <div class="filter-bar" role="group" aria-label="Filter by service">
       <button data-tag="all" aria-pressed="true">All</button>
-      <button data-tag="evaluations">Evaluations</button>
+      <button data-tag="eval">Evaluations</button>
       <button data-tag="aba">ABA</button>
       <button data-tag="speech">Speech</button>
       <button data-tag="ot">OT</button>
@@ -66,99 +67,123 @@
 
 <section class="section">
   <div class="container">
-    <ul class="list-grid" role="list">
-      <li class="provider" data-tags="evaluations" id="maya">
-        <div class="provider-photo p1"></div>
+    <div class="list-grid">
+      <article class="provider-card" data-tags="eval">
+        <div class="provider-photo"><img src="/assets/img/child-1.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Dr. Maya Reyes, Psy.D.</strong><span class="rating">★ 4.9</span></div>
-          <p class="provider-spec">Autism &amp; ADHD evaluations · Orlando &amp; telehealth</p>
-          <ul class="chip-row"><li>In-network</li><li>Bilingual</li><li>Ages 3–17</li></ul>
-          <div class="provider-foot"><span class="price">From $185/visit</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Dr. Maya Reyes, Psy.D.</div>
+          <div class="provider-role">Autism &amp; ADHD evaluations · Orlando &amp; telehealth</div>
+          <div class="provider-tags"><span>In-network</span><span>Bilingual</span><span>Ages 3–17</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $185/visit</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="aba" id="james">
-        <div class="provider-photo p2"></div>
+      </article>
+      <article class="provider-card" data-tags="aba">
+        <div class="provider-photo"><img src="/assets/img/child-2.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>James Okafor, BCBA</strong><span class="rating">★ 5.0</span></div>
-          <p class="provider-spec">ABA therapy · Tampa, in-home</p>
-          <ul class="chip-row"><li>Accepts Medicaid</li><li>Early intervention</li></ul>
-          <div class="provider-foot"><span class="price">Insurance billed</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">James Okafor, BCBA</div>
+          <div class="provider-role">ABA therapy · Tampa, in-home</div>
+          <div class="provider-tags"><span>Medicaid</span><span>Early intervention</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">Insurance billed</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="speech" id="priya">
-        <div class="provider-photo p3"></div>
+      </article>
+      <article class="provider-card" data-tags="speech">
+        <div class="provider-photo"><img src="/assets/img/child-3.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Priya Shah, M.S., CCC-SLP</strong><span class="rating">★ 4.8</span></div>
-          <p class="provider-spec">Speech-language pathology · Miami</p>
-          <ul class="chip-row"><li>AAC certified</li><li>Bilingual</li></ul>
-          <div class="provider-foot"><span class="price">From $140/visit</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Priya Shah, M.S., CCC-SLP</div>
+          <div class="provider-role">Speech-language pathology · Miami</div>
+          <div class="provider-tags"><span>AAC certified</span><span>Bilingual</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $140/visit</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="ot">
-        <div class="provider-photo p1"></div>
+      </article>
+      <article class="provider-card" data-tags="ot">
+        <div class="provider-photo"><img src="/assets/img/happy-child.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Elena Kovac, OTR/L</strong><span class="rating">★ 4.9</span></div>
-          <p class="provider-spec">Occupational therapy · Orlando clinic</p>
-          <ul class="chip-row"><li>Sensory integration</li><li>Ages 2–12</li></ul>
-          <div class="provider-foot"><span class="price">From $160/visit</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Elena Kovac, OTR/L</div>
+          <div class="provider-role">Occupational therapy · Orlando clinic</div>
+          <div class="provider-tags"><span>Sensory integration</span><span>Ages 2–12</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $160/visit</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="evaluations">
-        <div class="provider-photo p3"></div>
+      </article>
+      <article class="provider-card" data-tags="eval">
+        <div class="provider-photo"><img src="/assets/img/goofy.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Dr. Aaron Levy, Ph.D.</strong><span class="rating">★ 4.7</span></div>
-          <p class="provider-spec">Psychoeducational evaluations · Jacksonville</p>
-          <ul class="chip-row"><li>Learning differences</li><li>IEP support</li></ul>
-          <div class="provider-foot"><span class="price">From $220/visit</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Dr. Aaron Levy, Ph.D.</div>
+          <div class="provider-role">Psychoeducational evaluations · Jacksonville</div>
+          <div class="provider-tags"><span>Learning differences</span><span>IEP support</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $220/visit</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="aba">
-        <div class="provider-photo p2"></div>
+      </article>
+      <article class="provider-card" data-tags="aba">
+        <div class="provider-photo"><img src="/assets/img/twobabies.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Tonya Brooks, BCBA</strong><span class="rating">★ 4.9</span></div>
-          <p class="provider-spec">ABA therapy · Orlando, in-clinic</p>
-          <ul class="chip-row"><li>Naturalistic ABA</li><li>Parent training</li></ul>
-          <div class="provider-foot"><span class="price">Insurance billed</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Tonya Brooks, BCBA</div>
+          <div class="provider-role">ABA therapy · Orlando, in-clinic</div>
+          <div class="provider-tags"><span>Naturalistic ABA</span><span>Parent training</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">Insurance billed</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="speech">
-        <div class="provider-photo p1"></div>
+      </article>
+      <article class="provider-card" data-tags="speech">
+        <div class="provider-photo"><img src="/assets/img/babygirl.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Marcus Lee, CCC-SLP</strong><span class="rating">★ 4.8</span></div>
-          <p class="provider-spec">Speech &amp; fluency · Tampa</p>
-          <ul class="chip-row"><li>Stuttering</li><li>Apraxia</li></ul>
-          <div class="provider-foot"><span class="price">From $135/visit</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Marcus Lee, CCC-SLP</div>
+          <div class="provider-role">Speech &amp; fluency · Tampa</div>
+          <div class="provider-tags"><span>Stuttering</span><span>Apraxia</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $135/visit</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="learning">
-        <div class="provider-photo p3"></div>
+      </article>
+      <article class="provider-card" data-tags="learning">
+        <div class="provider-photo"><img src="/assets/img/siblings.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Sara Pham, M.Ed., CALT</strong><span class="rating">★ 4.9</span></div>
-          <p class="provider-spec">Dyslexia &amp; literacy intervention · Telehealth</p>
-          <ul class="chip-row"><li>Orton-Gillingham</li><li>Ages 6–15</li></ul>
-          <div class="provider-foot"><span class="price">From $95/hr</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Sara Pham, M.Ed., CALT</div>
+          <div class="provider-role">Dyslexia &amp; literacy · Telehealth</div>
+          <div class="provider-tags"><span>Orton-Gillingham</span><span>Ages 6–15</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $95/hr</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-      <li class="provider" data-tags="coaching">
-        <div class="provider-photo p2"></div>
+      </article>
+      <article class="provider-card" data-tags="coaching">
+        <div class="provider-photo"><img src="/assets/img/family.png" alt="" /></div>
         <div class="provider-body">
-          <div class="provider-top"><strong>Rachel Adeyemi, LCSW</strong><span class="rating">★ 5.0</span></div>
-          <p class="provider-spec">Parent coaching &amp; family therapy · Miami</p>
-          <ul class="chip-row"><li>Post-diagnosis</li><li>IEP/504</li></ul>
-          <div class="provider-foot"><span class="price">From $150/session</span><a class="btn btn-soft" href="/#match">Request match</a></div>
+          <div class="provider-name">Rachel Adeyemi, LCSW</div>
+          <div class="provider-role">Parent coaching · Miami</div>
+          <div class="provider-tags"><span>Post-diagnosis</span><span>IEP/504</span></div>
+          <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:800;color:var(--ink)">From $150/session</span>
+            <a class="btn btn-outline" style="padding:8px 14px;font-size:13px" href="/#match">Request</a>
+          </div>
         </div>
-      </li>
-    </ul>
+      </article>
+    </div>
   </div>
 </section>
 
 <section class="cta-band">
   <div class="container cta-row">
-    <div>
-      <h2>Not sure who fits?</h2>
-      <p>Tell us about your child in 3 minutes and a care navigator will hand-pick 2–3 providers for you.</p>
-    </div>
-    <a class="btn btn-light btn-lg" href="/#match">Get matched</a>
+    <div><h2>Not sure who fits?</h2><p>Tell us about your child in three minutes — a coordinator hand-picks two or three providers for you.</p></div>
+    <a class="btn btn-ink btn-lg" href="/#match">Get matched</a>
   </div>
 </section>
 
@@ -166,38 +191,19 @@
 
 <footer class="foot">
   <div class="container foot-grid">
-    <div>
-      <a class="brand" href="/" aria-label="Aldea Connect home">
-        <span class="brand-mark"><svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="14" fill="#0a8a8a"/><path d="M9 20c2-6 5-9 7-9s5 3 7 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#fff"/></svg></span>
-        <span class="brand-word">Aldea<span class="brand-dot">.</span>Connect</span>
-      </a>
+    <div class="foot-brand">
+      <a class="brand" href="/" style="color:#fff"><img class="brand-logo" src="/assets/img/logo/aldea-logo.svg" alt="" style="filter:brightness(0) invert(1)" /><span><span class="brand-wordmark">Aldea</span><span class="brand-sub">Connect Directory</span></span></a>
       <p class="foot-tag">Pediatric care, matched in days. Florida-based, family-first.</p>
     </div>
-    <div>
-      <h4>For families</h4>
-      <a href="/providers.html">Find a provider</a>
-      <a href="/screeners.html">Free screeners</a>
-      <a href="/how-it-works.html">How it works</a>
-    </div>
-    <div>
-      <h4>For providers</h4>
-      <a href="/for-providers.html">Join the network</a>
-      <a href="/for-providers.html#pricing">Pricing</a>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-    </div>
+    <div><h4>Quick links</h4><a href="/">Home</a><a href="/about.html">About us</a><a href="/contact.html">Contact</a><a href="/learn.html">Learn</a></div>
+    <div><h4>Services</h4><a href="/providers.html?tag=aba">ABA therapy</a><a href="/providers.html?tag=speech">Speech therapy</a><a href="/providers.html?tag=eval">Evaluations</a></div>
+    <div><h4>Locations</h4><a href="#">Orlando</a><a href="#">Tampa</a><a href="#">Miami</a><a href="#">Jacksonville</a></div>
+    <div><h4>Support</h4><a href="/#faq">FAQ</a><a href="/contact.html">Contact us</a></div>
   </div>
   <div class="container foot-base">
-    <span>© <span id="yr"></span> Aldea Connect. All matching, intake and billing happen on platform.</span>
-    <span>Orlando · Tampa · Miami · Jacksonville</span>
+    <span>© <span id="yr">2026</span> Aldea Connect. All rights reserved.</span>
+    <span class="foot-legal"><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a></span>
   </div>
 </footer>
-
 <script src="/assets/app.js" defer></script>
-</body>
-</html>
+</body></html>
