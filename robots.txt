@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /login
 Disallow: /login.html
 
 Sitemap: https://aldea-connect.vercel.app/sitemap.xml
