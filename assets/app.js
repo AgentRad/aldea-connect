@@ -85,9 +85,40 @@
       });
     };
     buttons.forEach((b) => b.addEventListener("click", () => apply(b.dataset.tag)));
+
+    // Map homepage service-pill tags to existing filter buttons.
+    const tagMap = {
+      "autism-eval": "eval", "adhd": "eval", "gifted": "eval", "cognitive": "eval",
+      "autism-therapy": "aba", "behavior": "aba", "emotion": "coaching", "tantrum": "coaching",
+      "social": "coaching", "daily": "coaching", "social-comm": "speech",
+      "articulation": "speech", "language": "speech", "learning": "learning"
+    };
+
     const qs = new URLSearchParams(location.search);
-    const initial = qs.get("tag") || qs.get("service");
-    if (initial && buttons.some((b) => b.dataset.tag === initial)) apply(initial);
+    let initial = qs.get("tag") || qs.get("service");
+    if (initial && !buttons.some((b) => b.dataset.tag === initial)) {
+      initial = tagMap[initial] || null;
+    }
+    if (initial) apply(initial);
+
+    // Location filter: ?loc=orlando|tampa|miami|jacksonville
+    const loc = (qs.get("loc") || "").toLowerCase();
+    if (loc) {
+      items.forEach((el) => {
+        const hay = el.textContent.toLowerCase();
+        if (!hay.includes(loc)) el.style.display = "none";
+      });
+      // Add a small heading note
+      const head = $(".page-head .container");
+      if (head) {
+        const note = document.createElement("p");
+        note.style.marginTop = "10px";
+        note.style.fontWeight = "700";
+        note.style.color = "var(--teal-dark)";
+        note.textContent = "Filtered by " + loc.charAt(0).toUpperCase() + loc.slice(1);
+        head.appendChild(note);
+      }
+    }
   }
   const search = $("#provider-search");
   if (search) {
